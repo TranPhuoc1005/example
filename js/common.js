@@ -61,6 +61,7 @@ $(function () {
         init: function () {
             this.slideMainLeftToRight();
             this.initAnimate();
+            this.textEffect3();
         },
         // Main slide left to right
         slideMainLeftToRight: function () {
@@ -148,6 +149,60 @@ $(function () {
                 });
 
             });
+        },
+
+        // Text effect 3
+        textEffect3: function () {
+            if($('body').hasClass('text-efftect3')) {
+                $(window).on('load', function () {
+                    if ($(".wow").length > 0) {
+                        new WOW().init();
+                    }
+                });
+                $('.text_effect').each(function (index, e) {
+                    var $sentence = $(this);
+                    var cloneElementContent = $sentence.html();
+                    var $sentenceChildNodes = $sentence[0].childNodes;
+    
+                    var newNodeContent = '';
+                    for (var $i = 0; $i < $sentenceChildNodes.length; $i++) {
+                        var $nodeText = $sentenceChildNodes[$i].data;
+                        var cloneNodeText = "";
+                        if ($nodeText) {
+                            for (var i = 0; i < $nodeText.length; i++) {
+                                var substring = $nodeText.substr(i, 1);
+                                if (substring != " ") {
+                                    cloneNodeText += '<span class="effect_char">' + substring + '</span>';
+                                } else {
+                                    cloneNodeText += substring;
+                                }
+                            }
+                            cloneElementContent = cloneElementContent.replace($nodeText, cloneNodeText);
+                        } else {
+                            newNodeContent += $sentenceChildNodes[$i].outerHTML;
+                        }
+                    }
+                    $sentence.html(cloneElementContent);
+                });
+    
+                $('.text_effect').find('.effect_char').each(function (index, e) {
+                    var time = index / 20;
+                    $(this).css('transition-delay', time + 's');
+                    $(this).addClass("glow");
+    
+                });
+                $('.text_effect.type01').find('.effect_char').each(function (index, e) {
+                    $(this).addClass("glow");
+    
+                });
+    
+                $(window).bind('load', function () {
+                    $('.text_effect').each(function () {
+                        $(this).addClass('animate');
+                    });
+    
+                });
+            }
         }
     };
 
