@@ -725,18 +725,18 @@ h2 {
 /* End toggle 1 */
 
 /* Text effect 1 */
-.text-effect1 #mainvisual h2 > span {
+#text-effect1 #mainvisual h2 > span {
     display: inline-block;
     overflow: hidden;
     margin-top: -8px;
 }
-.text-effect1 .animate .effect_char {
+#text-effect1 .animate .effect_char {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
 }
 
-.text-effect1 .effect_char {
+#text-effect1 .effect_char {
     display: inline-block;
     -webkit-transform: translateY(120%);
     -ms-transform: translateY(120%);
@@ -745,13 +745,13 @@ h2 {
     transition: all 1s cubic-bezier(.01, .25, 0, 1.04);
 }
 
-.text-effect1 .h2-txt1 {
+#text-effect1 .h2-txt1 {
     font-size: 46px;
     color: #fff;
     display: block;
 }
 
-.text-effect1 .h2-txt2 {
+#text-effect1 .h2-txt2 {
     font-size: 83px;
     color: #00a0ae;
     letter-spacing: -.02em;
@@ -759,14 +759,14 @@ h2 {
     display: block;
 }
 
-.text-effect1 .h2-txt3 {
+#text-effect1 .h2-txt3 {
     font-size: 60px;
     color: #fff;
     margin-bottom: 25px;
     display: block;
 }
 
-.text-effect1 .h2-txt4 {
+#text-effect1 .h2-txt4 {
     font-size: 30px;
     color: #000000;
     line-height: 1.5 !important;
@@ -775,16 +775,16 @@ h2 {
     display: block;
 }
 
-.text-effect1 .ex-text-effect {
+#text-effect1 .ex-text-effect {
     background-color: #333;
 }
 /* End text effect 1 */
 
 /* Text effect 2 */
-#text-effect1 #mainvisual {
+ #mainvisual {
     position: relative;
 }
-#text-effect1 #mainvisual .container {
+#mainvisual .container {
     width: 100%;
     max-width: 1560px;
     margin: 0 auto;
