@@ -726,7 +726,7 @@ h2 {
 /* End toggle 1 */
 
 /* Text effect 1 */
-#mainvisual h2 > span {
+.text-effect1 #mainvisual h2 > span {
     display: inline-block;
     overflow: hidden;
     margin-top: -8px;
@@ -746,13 +746,13 @@ h2 {
     transition: all 1s cubic-bezier(.01, .25, 0, 1.04);
 }
 
-.h2-txt1 {
+.text-effect1 .h2-txt1 {
     font-size: 46px;
     color: #fff;
     display: block;
 }
 
-.h2-txt2 {
+.text-effect1 .h2-txt2 {
     font-size: 83px;
     color: #00a0ae;
     letter-spacing: -.02em;
@@ -760,14 +760,14 @@ h2 {
     display: block;
 }
 
-.h2-txt3 {
+.text-effect1 .h2-txt3 {
     font-size: 60px;
     color: #fff;
     margin-bottom: 25px;
     display: block;
 }
 
-.h2-txt4 {
+.text-effect1 .h2-txt4 {
     font-size: 30px;
     color: #000000;
     line-height: 1.5 !important;
@@ -776,7 +776,7 @@ h2 {
     display: block;
 }
 
-.ex-text-effect {
+.text-effect1 .ex-text-effect {
     background-color: #333;
 }
 /* End text effect 1 */
