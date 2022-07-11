@@ -426,34 +426,34 @@ h2 {
 }
 
 /* Slide 2 animate */
-#mainvisual .slide01 {
+.slide-2anim #mainvisual .slide01 {
     display: block;
     background: url("../images/vs-main1.jpg") center top/cover no-repeat;
     height: 100%;
   }
-  #mainvisual .slide02 {
+  .slide-2anim #mainvisual .slide02 {
     display: block;
     background: url("../images/vs-main2.jpg") center top/cover no-repeat;
     height: 100%;
   }
   
-  #mainvisual .slide03 {
+.slide-2anim #mainvisual .slide03 {
     display: block;
     background: url("../images/vs-main3.jpg") center top/cover no-repeat;
     height: 100%;
   }
   
-  .slider_unit .slider-track {
+  .slide-2anim  .slider_unit .slider-track {
     -webkit-transition: all 4s cubic-bezier(0.7, 0, 0.3, 1);
     transition: all 4s cubic-bezier(0.7, 0, 0.3, 1);
   }
   
-  .slider_unit .img {
+  .slide-2anim  .slider_unit .img {
     width: 100%;
     transform: scale(1.1);
   }
   
-  .slider_unit .slide_item.effect .img {
+  .slide-2anim  .slider_unit .slide_item.effect .img {
     animation: cssAnimation 7s linear infinite;
   }
   
@@ -467,23 +467,23 @@ h2 {
     }
   }
   
-  .idx_mainvi_slide {
+  .slide-2anim .idx_mainvi_slide {
     height: 960px;
   }
   
-  .idx_mainvi_slide_inner {
+  .slide-2anim .idx_mainvi_slide_inner {
       position: relative;
       z-index: 1;
   }
   
-  .idx_mainvi_slide .slider_unit {
+  .slide-2anim .idx_mainvi_slide .slider_unit {
       width: 1482px;
       height: 100%;
       margin-left: auto;
       background: url('../images/vs-main1.jpg');
   }
   
-  .idx_mainvi_slide .slider_unit .slide_item {
+  .slide-2anim .idx_mainvi_slide .slider_unit .slide_item {
       width: 0;
       height: 100%;
       position: absolute;
@@ -494,7 +494,7 @@ h2 {
       overflow: hidden;
   }
   
-  .idx_mainvi_slide .slider_unit .slide_item .slide_img {
+  .slide-2anim .idx_mainvi_slide .slider_unit .slide_item .slide_img {
       display: block;
       position: absolute;
       top: 0;
@@ -505,7 +505,7 @@ h2 {
       transform-origin: 50% 50%;
   }
   
-  .idx_mainvi_slide .slider_unit .slide_item .slide_img>span {
+  .slide-2anim .idx_mainvi_slide .slider_unit .slide_item .slide_img>span {
       height: 100%;
       -webkit-background-size: cover;
       background-size: cover;
@@ -517,18 +517,18 @@ h2 {
       display: block;
   }
   
-  .idx_mainvi_slide .slider_unit .slide_item {
+  .slide-2anim .idx_mainvi_slide .slider_unit .slide_item {
       z-index: 0;
   }
-  .idx_mainvi_slide .slider_unit .slide_item.is_active {
+  .slide-2anim .idx_mainvi_slide .slider_unit .slide_item.is_active {
       -webkit-transition: width 1.5s cubic-bezier(0.09, 0.34, 0.63, 1);
       transition: width 1.5s cubic-bezier(0.09, 0.34, 0.63, 1);
       width: 100vw;
   }
-  .idx_mainvi_slide .slider_unit .slide_item.show {
+  .slide-2anim .idx_mainvi_slide .slider_unit .slide_item.show {
       z-index: 1;
   }
-  .idx_mainvi_slide .slider_unit .slide_item.is_active .slide_img>span {
+  .slide-2anim .idx_mainvi_slide .slider_unit .slide_item.is_active .slide_img>span {
       -webkit-transition: -webkit-transform 5s linear;
       transition: -webkit-transform 7s linear;
       transition: transform 7s linear;
@@ -536,20 +536,20 @@ h2 {
       -webkit-transform: translateX(0);
       transform: translateX(0);
   }
-  .slide_img {
+  .slide-2anim .slide_img {
     position: relative;
     overflow: hidden;
     width: 1482px;
     height: 960px;
     z-index: 1;
   }
-  #mainvisual {
+  .slide-2anim #mainvisual {
     position: relative;
     height: 1100px;
     
   }
   
-  #mainvisual::before {
+  .slide-2anim #mainvisual::before {
     content: "";
     position: absolute;
     background-color: #ebedef;
@@ -558,17 +558,16 @@ h2 {
     top: 100px;
   }
   
-  .main-fix-meta .fix-meta-1 {
+  .slide-2anim .main-fix-meta .fix-meta-1 {
     position: relative;
     font-size: 50px;
-    /* color: red; */
     color: #003366;
     font-weight: bold;
     margin-bottom: 36px;
     line-height: 1.48;
   }
   
-  .main-fix-meta .fix-meta-1::before {
+  .slide-2anim .main-fix-meta .fix-meta-1::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -577,12 +576,12 @@ h2 {
     bottom: -21px;
   }
   
-  .main-fix-meta .fix-meta-2 {
+  .slide-2anim .main-fix-meta .fix-meta-2 {
     font-size: 24px;
     line-height: 1.7;
   }
   
-  .main-fix-meta {
+  .slide-2anim .main-fix-meta {
     position: absolute;
     width: 512px;
     min-height: 466px;
@@ -596,7 +595,7 @@ h2 {
     z-index: 3;
   }
   
-  .main-fix-meta::before {
+  .slide-2anim .main-fix-meta::before {
     content: "";
     position: absolute;
     background-color: #fff;
@@ -608,7 +607,7 @@ h2 {
     left: 0;
   }
   
-  .main-fix-meta::after {
+  .slide-2anim .main-fix-meta::after {
     content: "";
     position: absolute;
     width: 512px;
